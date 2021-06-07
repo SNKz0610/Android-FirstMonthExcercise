@@ -14,14 +14,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.register.R
 
-
-// Function check format of email
 fun isEmailValid(email: String): Boolean {
     return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
 }
 
-
-// Function show alert for invalid email
 fun alertDialogOfInvalidEmail(context: Context) {
     val builder = AlertDialog.Builder(context)
     builder.setTitle("WARRNING")
