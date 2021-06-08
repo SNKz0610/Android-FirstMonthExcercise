@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnContinue: Button = findViewById(R.id.btn_continue)
-        val edtEmail: EditText = findViewById(R.id.edt_email)
+        val btnContinue: Button = findViewById(R.id.button_main_continue)
+        val edtEmail: EditText = findViewById(R.id.edittext_main_email)
 
         edtEmail.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
