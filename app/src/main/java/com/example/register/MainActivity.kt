@@ -14,14 +14,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.register.R
 
-
-// Function check format of email
 fun isEmailValid(email: String): Boolean {
     return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
 }
 
-
-// Function show alert for invalid email
 fun alertDialogOfInvalidEmail(context: Context) {
     val builder = AlertDialog.Builder(context)
     builder.setTitle("WARRNING")
@@ -39,8 +35,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnContinue: Button = findViewById(R.id.btn_continue)
-        val edtEmail: EditText = findViewById(R.id.edt_email)
+        val btnContinue: Button = findViewById(R.id.button_main_continue)
+        val edtEmail: EditText = findViewById(R.id.edittext_main_email)
 
         edtEmail.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
